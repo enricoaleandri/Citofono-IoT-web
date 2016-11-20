@@ -4,8 +4,11 @@
 
 
 var MqttService  = function(){
-        MqttService.prototype.config = require("./config/mqttConfig.json");
-
+        try { // if dont found, it means we are deployed, so we will look for it in to HEROKU environment
+              MqttService.prototype.config = require("./config/mqttConfig.json");
+        }catch(e){
+          serviceAccount = process.env['mqttConfig.json'];
+        }
         MqttService.prototype.init = function(){
 
             var mqtt = require('mqtt');

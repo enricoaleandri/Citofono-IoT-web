@@ -16,8 +16,9 @@ var MqttService  = function(){
 
 
             var options = configMQTT.credential;
+            var CLOUDMQTT_URL = process ? process.env.CLOUDMQTT_URL : undefined;
 
-            var client = mqtt.connect(options);
+            var client = mqtt.connect(CLOUDMQTT_URL || options);
             this.client = client;
             client.on('connect', function () { // When connected
 

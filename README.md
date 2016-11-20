@@ -1,17 +1,17 @@
-# node-js-getting-started
+# Doorbell Iot
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
-
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+This is a template, to pilot a IoT doorbell made with ESP 8266 connected by MQTT, the authentication is made with firebase runned by node backend passport rules.
+Nothing special, just a nice template to improve.
 
 ## Running Locally
 
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
 
 ```sh
-$ git clone https://[username]@bitbucket.org/aleandriinc/web-interface.git # or clone your own fork
-$ cd web-interface
+$ git clone https://github.com/enricoaleandri/Citofono-IoT-web.git # or clone your own fork
+$ cd Citofono-IoT-web
 $ npm install
+$ bower install
 $ npm start
 ```
 
@@ -30,5 +30,5 @@ or
 
 ## Documentation
 
-In the /public directory you have exposed web pages ( based on Angular ), with the module of application, in the /views directory
+In the /public directory you have exposed web pages ( based on Angular ) in modular patten, in the /views directory
 there are the Node pages

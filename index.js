@@ -18,7 +18,7 @@ try {// if dont found, it means we are deployed, so we will look for it in to HE
 }
 mqttService.init(); // start connection to
 var config = {
-  credential: admin.credential.cert(serviceAccount),
+  serviceAccount: serviceAccount,
   databaseURL: "https://citofono-aleandri.firebaseio.com/"
   
 };

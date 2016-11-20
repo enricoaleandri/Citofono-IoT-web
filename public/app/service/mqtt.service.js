@@ -10,10 +10,10 @@
 
     function callMqttService(button){
       var data = {
-        event : button
+        bottone : button
       };
       var request = {
-        method : "GET",
+        method : "POST",
         url :  ENDPOINT_MQTT,
         data : data
       }

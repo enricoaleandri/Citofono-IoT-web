@@ -14,11 +14,11 @@ var serviceAccount;
 try {// if dont found, it means we are deployed, so we will look for it in to HEROKU environment
   serviceAccount = require("./app/config/citofono-aleandri-494b90f93463.json");
 }catch(e){
-  serviceAccount = process.env['citofono-aleandri-494b90f93463.json'];
+  serviceAccount = JSON.parse(process.env['citofono-aleandri-494b90f93463.json']);
 }
 mqttService.init(); // start connection to
 var config = {
-  serviceAccount: serviceAccount,
+  credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://citofono-aleandri.firebaseio.com/"
   
 };

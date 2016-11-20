@@ -1,0 +1,41 @@
+<title>FoodFeeder App</title>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css"> <!-- load bootstrap css -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+
+<!-- inject:css -->
+<link rel="stylesheet" href="stylesheets/main.css">
+<!-- endinject -->
+
+<!-- bower:css-->
+<!-- endinject -->
+
+
+<!-- bower:js-->
+<script src="components/jquery/dist/jquery.js"></script>
+<script src="components/angular/angular.js"></script>
+<script src="components/angular-route/angular-route.js"></script>
+<script src="components/firebase/firebase.js"></script>
+<script src="components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- endinject -->
+
+<!-- inject:js -->
+<script src="app/pages/homeMobile/mobile_ctrl.js"></script>
+<script src="app/service/service.module.js"></script>
+<script src="app/service/mqtt.service.js"></script>
+<script src="app/service/config.service.js"></script>
+<script src="app/pages/pages.module.js"></script>
+<script src="app/app.js"></script>
+<!-- endinject -->
+
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAoZsBIAqpxzijF4KxXvMdRptOFX8WnWKw",
+        authDomain: "citofono-aleandri.firebaseapp.com",
+        databaseURL: "https://citofono-aleandri.firebaseio.com",
+        storageBucket: "citofono-aleandri.appspot.com",
+        messagingSenderId: "91016233932"
+    };
+    firebase.initializeApp(config);
+</script>

@@ -1,0 +1,46 @@
+{
+  "name": "CitofonoIoT-Interface",
+  "version": "0.1.0",
+  "description": "Applicazione per il controllo remoto del citofono Aleandri",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp build & node index.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.0.0",
+    "ejs": "2.4.1",
+    "express": "4.13.3",
+    "express-session": "~1.0.0",
+    "firebase": "3.2.1",
+    "firebase-auth": "0.1.2",
+    "method-override": "~1.0.0",
+    "mqtt": "2.0.0",
+    "passport": "~0.1.17",
+    "passport-local": "~0.1.6",
+    "jsesc": "2.2.0",
+    "string-escape": "0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/aleandriinc/web-interface"
+  },
+  "keywords": [
+    "Citofono Iot",
+    "Aleandri"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "angular-route": "^1.5.8",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-util": "^3.0.7",
+    "main-bower-files": "^2.13.1"
+  }
+}

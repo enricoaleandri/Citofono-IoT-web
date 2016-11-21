@@ -6,4 +6,8 @@ body {
 }
 .bottoni-citofono button.btn.btn-info.btn-block{
     height: 70px;
+    font-size: 40px;
+}
+ul.nav.navbar-nav{
+    font-size: 30px;
 }

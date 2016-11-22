@@ -55,7 +55,7 @@ require('./app/passport.js')(passport); // load our routes and pass in our app a
 
 require('./app/routes.js')(app, passport,firebase); // load our routes and pass in our app and fully configured passport
 
-
+ 
 // ROUTES FOR OUR API
 // =============================================================================
 var router = express.Router();              // get an instance of the express Router

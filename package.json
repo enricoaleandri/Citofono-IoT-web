@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp build & node index.js",
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "postinstall": "./node_modules/bower/bin/bower install & wget http://sourceforge.net/projects/opencore-amr &  opencore-amr-0.1.2/configure CFLAGS='-arch i386 -m32' LDFALGS='-arch i386' & make & make install"
   },
   "dependencies": {
     "angular-route": "^1.5.8",
@@ -33,7 +33,8 @@
     "mqtt": "2.0.0",
     "passport": "~0.1.17",
     "passport-local": "~0.1.6",
-    "string-escape": "0.3.0"
+    "string-escape": "0.3.0",
+    "wget": "0.0.1"
   },
   "repository": {
     "type": "git",

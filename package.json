@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp build & node index.js",
-     "postinstall" : "bash.sh"
+     "postinstall" : "./bash.sh"
   },
   "dependencies": {
     "angular-route": "^1.5.8",

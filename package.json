@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp build & node index.js",
-     "postinstall" : "wget http://sourceforge.net/projects/opencore-amr &&  opencore-amr-0.1.2/configure CFLAGS='-arch i386 -m32' LDFALGS='-arch i386' && make && make install"
+     "postinstall" : "bash.sh"
   },
   "dependencies": {
     "angular-route": "^1.5.8",
